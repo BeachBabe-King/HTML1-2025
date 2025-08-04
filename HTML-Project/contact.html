@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Davisco Shipping - Get quotes and information about shipping containers">
+    <title>Contact Us - Davisco Shippingn</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+<body>
+<!-- loaded by JavaScript -->
+<header id="header"></header>
+
+<main>
+    <!-- Page Title -->
+    <section class="page-title">
+        <div class="container">
+            <h1>Contact Davisco Shipping</h1>
+            <p>Get in touch with our container experts</p>
+        </div>
+    </section>
+
+    <!-- Contact Information and Form -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-layout">
+                <!-- Contact Information -->
+                <div class="contact-info">
+                    <h2>Get in Touch</h2>
+                    <p>Our experienced team is ready to help you find the perfect container solution for your shipping needs.</p>
+
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <span class="icon">📍</span>
+                            <div>
+                                <h4>Corporate Headquarters</h4>
+                                <p>1 Georgian Dr<br>Barrie, ON L4M 1E9<br>Canada</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <span class="icon">📞</span>
+                            <div>
+                                <h4>Phone Numbers</h4>
+                                <p>Sales: (705) 555-CCAN<br>Support: (705) 555-7878</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <span class="icon">📧</span>
+                            <div>
+                                <h4>Email Addresses</h4>
+                                <p>info@Daviscoshipping.com<br>sales@Daviscoshipping.com<br>support@Daviscoshipping.com</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <span class="icon">🕒</span>
+                            <div>
+                                <h4>Business Hours</h4>
+                                <p>Monday - Friday: 7:00 AM - 6:00 PM EST<br>Saturday: 8:00 AM - 2:00 PM EST</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form-section">
+                    <h2>Send Us a Message</h2>
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">First Name *</label>
+                                <input type="text" id="firstName" name="firstName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Last Name *</label>
+                                <input type="text" id="lastName" name="lastName" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="company">Company Name</label>
+                            <input type="text" id="company" name="company">
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="inquiryType">Inquiry Type *</label>
+                                <select id="inquiryType" name="inquiryType" required>
+                                    <option value="">Select inquiry type</option>
+                                    <option value="sales">Sales & Pricing</option>
+                                    <option value="technical">Technical Support</option>
+                                    <option value="quote">Request Quote</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="containerType">Container Interest</label>
+                                <select id="containerType" name="containerType">
+                                    <option value="">Select container type</option>
+                                    <option value="20ft">20ft Standard Container</option>
+                                    <option value="40ft">40ft Large Container</option>
+                                    <option value="refrigerated">Refrigerated Container</option>
+                                    <option value="multiple">Multiple Types</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Please tell us about your container needs, timeline, and any questions..." required></textarea>
+                        </div>
+
+                        <div class="form-group checkbox-group">
+                            <input type="checkbox" id="newsletter" name="newsletter">
+                            <label for="newsletter">Subscribe to Davisco for updates and product announcements</label>
+                        </div>
+
+                        <div class="form-group checkbox-group">
+                            <input type="checkbox" id="privacy" name="privacy" required>
+                            <label for="privacy">I agree to the Privacy Policy and Terms of Service *</label>
+                        </div>
+
+                        <button type="submit" class="btn primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Actions -->
+    <section class="quick-actions">
+        <div class="container">
+            <h2>Quick Actions</h2>
+            <div class="actions-grid">
+                <div class="action-card">
+                    <span class="icon">💰</span>
+                    <h4>Request Quote</h4>
+                    <p>Get pricing for your container requirements</p>
+                    <button class="btn secondary" onclick="requestQuote()">Get Quote</button>
+                </div>
+                <div class="action-card">
+                    <span class="icon">📋</span>
+                    <h4>Download Catalog</h4>
+                    <p>Complete product specifications and pricing</p>
+                    <button class="btn secondary" onclick="downloadCatalog()">Download PDF</button>
+                </div>
+                <div class="action-card">
+                    <span class="icon">🔧</span>
+                    <h4>Technical Support</h4>
+                    <p>Get help with existing containers</p>
+                    <button class="btn secondary" onclick="openSupport()">Get Support</button>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- Footer loaded by JavaScript -->
+<footer id="footer"></footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

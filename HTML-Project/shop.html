@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Browse Davisco Shipping containers - 20ft, 40ft, and refrigerated containers">
+    <title>Our Products - Davisco Shipping</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+<body>
+<!-- Headre will be loaded by JavaScript -->
+<header id="header"></header>
+
+<main>
+    <!-- Page  Title -->
+    <section class="page-title">
+        <div class="container">
+            <h1>Our Containers</h1>
+            <p>Quality shipping containers for global trade</p>
+        </div>
+    </section>
+
+    <!-- Products Filter -->
+    <section class="products-filter">
+        <div class="container">
+            <h2>Choose Your Container Type</h2>
+            <div class="filter-buttons">
+                <button class="filter-btn active" onclick="filterProducts('all')">All Products</button>
+                <button class="filter-btn" onclick="filterProducts('standard')">Standard</button>
+                <button class="filter-btn" onclick="filterProducts('refrigerated')">Refrigerated</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Grid -->
+    <section class="products">
+        <div class="container">
+            <div class="products-grid">
+
+                <!-- Standard 20ft Container -->
+                <div class="product-card" data-type="standard">
+                    <div class="product-image">
+                        <img src="./img/20ft-C-can.png" alt="20ft Standard Container">
+                        <span class="badge">Most Popular</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Standard 20ft Container</h3>
+                        <p class="model">Model: CC-20ST</p>
+                        <p class="description">Perfect for medium-volume shipments. Industry standard
+                            dimensions with our SecureLock™ technology.</p>
+                        <div class="specs">
+                            <span>📐 20' x 8' x 8'6"</span>
+                            <span>⚖️ Max: 24,000 kg</span>
+                            <span>📦 33.2 m³</span>
+                        </div>
+                        <div class="price">Starting at $8,500</div>
+                        <a href="product1.html" class="btn primary">View Details</a>
+                    </div>
+                </div>
+
+                <!-- Large 40ft Container -->
+                <div class="product-card" data-type="standard">
+                    <div class="product-image">
+                        <img src="./img/40ft-C-can.png" alt="40ft Large Container">
+                        <span class="badge">High Capacity</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Large 40ft Container</h3>
+                        <p class="model">Model: CC-40ST</p>
+                        <p class="description">Maximum capacity for bulk shipments. Double the space of standard containers.</p>
+                        <div class="specs">
+                            <span>📐 40' x 8' x 8'6"</span>
+                            <span>⚖️ Max: 30,480 kg</span>
+                            <span>📦 67.7 m³</span>
+                        </div>
+                        <div class="price">Starting at $12,750</div>
+                        <a href="product2.html" class="btn primary">View Details</a>
+                    </div>
+                </div>
+
+                <!-- Refrigerated Container -->
+                <div class="product-card" data-type="refrigerated">
+                    <div class="product-image">
+                        <img src="./img/40ft-HC-C-can.png" alt="Refrigerated Container">
+                        <span class="badge">Climate Control</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Refrigerated Container</h3>
+                        <p class="model">Model: CC-40RF</p>
+                        <p class="description">Temperature-controlled shipping for perishable goods. Advanced cooling systems.</p>
+                        <div class="specs">
+                            <span>📐 40' x 8' x 9'6"</span>
+                            <span>🌡️ -25°C to +25°C</span>
+                            <span>📦 76.3 m³</span>
+                        </div>
+                        <div class="price">Starting at $28,900</div>
+                        <a href="product3.html" class="btn primary">View Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Call to Action -->
+    <section class="cta">
+        <div class="container">
+            <h2>Need Help Choosing?</h2>
+            <p>Our container experts can help you find the perfect solution for your shipping needs.</p>
+            <a href="contact.html" class="btn secondary">Contact Our Experts</a>
+        </div>
+    </section>
+</main>
+
+<!-- Footer will be loaded by JavaScript -->
+<footer id="footer"></footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
